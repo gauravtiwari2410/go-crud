@@ -20,7 +20,6 @@ func main() {
 	config.AutoMigrate(db)
 
 	app := fiber.New()
-	app.Use(app)
 	routes.Setup(app)
 	app.Listen(":3001")
 
